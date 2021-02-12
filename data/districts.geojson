@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/favicons/favicon.ico" />
+    <title>distritos</title>
+    <meta name="description" content="Map created by Jorge Sanz in CARTO">
+    <meta name="keywords" content="distritos, datasets, maps, data visualization, spatial data, geospatial, carto">
+    <meta name="author" content="jsanz">
+    <meta charset='utf-8' />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:site_name" content="CARTO" />
+    <meta property="og:description" content="Map created by Jorge Sanz in CARTO" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://team.carto.com/u/jsanz/tables/distritos/public" />
+    <meta property="og:image" content="https://cartocdn-gusc.global.ssl.fastly.net/jsanz/api/v1/map/static/named/tpl_3328dac8_23e7_11e5_8647_0e5e07bb5d8a/1200/630.png">
+      <meta property="fb:app_id" content="204330262947622" />
+      <meta property="fb:admins" content="500593636634213" />
+    <meta property="article:publisher" content="https://www.facebook.com/cartodb" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CARTO">
+      <meta name="twitter:creator" "@#{@twitter_username}" ">
+    <meta name="twitter:title" content="distritos">
+    <meta name="twitter:description" content="Map created by Jorge Sanz in CARTO">
+    <meta name="twitter:image" content="https://cartocdn-gusc.global.ssl.fastly.net/jsanz/api/v1/map/static/named/tpl_3328dac8_23e7_11e5_8647_0e5e07bb5d8a/560/300.png">
+
+    
+  <link rel="stylesheet" media="screen" href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/stylesheets/common_new.css" />
+<link rel="stylesheet" media="screen" href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/stylesheets/public_table_new.css" />
+<link rel="stylesheet" media="screen" href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/stylesheets/public_map_new.css" />
+
+    <!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRT8MSP');</script>
+<!-- End Google Tag Manager -->
+
+  </head>
+  <body class="public">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRT8MSP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+  <div class="Header CDB-Text" id="header">
+  <div class="u-inner Header-inner">
+    <div class="Header-navigation">
+      <ul class="Header-navigationList">
+        <li class="js-logo">
+          <a href="https://carto.com">
+            <span class="Logo">
+              <img src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/images/layout/carto-logo.svg" alt="carto">
+            </span>
+          </a>
+        </li>
+
+          <li class="Header-navigationItem js-user-tour u-hideOnTablet">
+            <a href="https://carto.com/builder/" class="Header-navigationLink">Builder</a>
+          </li>
+
+          <li class="Header-navigationItem js-user-tour u-hideOnTablet">
+            <a href="https://carto.com/engine/" class="Header-navigationLink">Engine</a>
+          </li>
+
+          <li class="Header-navigationItem js-user-industries u-hideOnTablet">
+            <a href="#/industries" class="Header-navigationLink js-dropdown-target">Solutions <i class="Header-darrow CDB-IconFont CDB-IconFont-caretDown"></i></a>
+          </li>
+
+          <li class="Header-navigationItem u-hideOnTablet">
+            <a href="https://carto.com/pricing/" class="Header-navigationLink">Pricing</a>
+          </li>
+
+          <li class="Header-navigationItem u-hideOnTablet">
+            <a href="https://carto.com/blog/" class="Header-navigationLink">Blog</a>
+          </li>
+      </ul>
+    </div>
+
+    <div class="Header-settings">
+      <ul class="Header-settingsList js-user-settings">
+        <li class="Header-settingsItem js-login">
+          <a href="https://jsanz.carto.com/login" class="Header-settingsLink Header-settingsLink Header-settingsLink--public">Login</a>
+        </li>
+
+          <li class="Header-settingsItem">
+            <a href="https://carto.com/signup" class="PublicButton PublicButton--sMedium PublicButton--cWhite is-hover PublicButton--public">
+              <span>Sign up</span>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="CDB-Text PublicMap-map js-map" id="map">
+    <div class="Spinner Spinner--center js-spinner"></div>
+
+    <div class="panes pane_table"></div>
+    <div class="panes pane_map"></div>
+
+    <div class="navigation u-showOnTablet">
+      <ul>
+        <li><a href="#/table" data-pane="table" class=" tab selected u-valign"><i class="Navmenu-tableIcon CDB-IconFont CDB-IconFont-table u-iblock u-malign"></i></a></li>
+        <li><a href="#/map" data-pane="map" class="u-valign"><i class="CDB-IconFont CDB-IconFont-map u-iblock u-malign"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="NotSupportedDialog" id="not_supported_dialog" style="display: none">
+    <h2 class="NotSupportedDialog-title">CARTO</h2>
+    <p class="NotSupportedDialog-desc">This visualization only works in modern browsers. Upgrade yours and enjoy.</p>
+    <ul class="NotSupportedDialog-list">
+      <li class="NotSupportedDialog-item"><a class="NotSupportedDialog-itemLink NotSupportedDialog-itemLink--Safari" href="http://www.apple.com/safari/" class="safari">Safari</a></li>
+      <li class="NotSupportedDialog-item"><a class="NotSupportedDialog-itemLink NotSupportedDialog-itemLink--Chrome" href="https://www.google.com/chrome/" class="chrome">Chrome</a></li>
+      <li class="NotSupportedDialog-item is-last"><a class="NotSupportedDialog-itemLink NotSupportedDialog-itemLink--Firefox" href="https://www.mozilla.org/en-US/firefox/" class="firefox">Firefox</a></li>
+    </ul>
+  </div>
+
+  <div class="separator bottom"></div>
+
+  <div class="CDB-Text CDB-Size-medium Navmenu js-Navmenu">
+    <div class="u-inner">
+      <div class="PublicMap-block">
+        <div class="PublicMap-gradient"></div>
+
+        <div class="PublicMap-leftBlock PublicMap-leftBlock--owner">
+          <ul class="Navmenu-list Navmenu-list--owner Navmenu-list--avatar">
+            <li class="Navmenu-item">
+              <a href="https://team.carto.com/u/jsanz/me" class="UserAvatar">
+                <img class="UserAvatar-img--medium" src="https://s3.amazonaws.com/com.cartodb.users-assets.production/production/jsanz/assets/20150512093716188264.jpeg" alt="Jorge Sanz" title="Jorge Sanz" />
+              </a>
+            </li>
+          </ul>
+
+          <ul class="Navmenu-list Navmenu-list--owner">
+            <li class="Navmenu-item u-hideOnTablet last-child">
+              <a href="https://team.carto.com/u/jsanz/me" class="Navmenu-link Navmenu-link--owner" title="Jorge Sanz">Jorge Sanz</a>
+            </li>
+
+              <li class="Navmenu-item">
+                <i class="Navmenu-rarrow CDB-IconFont CDB-IconFont-rArrowLight"></i>
+                <a href="https://team.carto.com/u/jsanz/datasets" class="Navmenu-link">Datasets</a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="PublicMap-rightBlock PublicMap-rightBlock--owner u-txt-right">
+          <ul class="Navmenu-list">
+            <li class="Navmenu-item Navmenu-item--action Navmenu-item--withsep u-hideOnTablet">
+              <div class="Navmenu-sep"></div>
+
+              <i class="Navmenu-actionIcon CDB-IconFont CDB-IconFont-markup"></i>
+              <a href="#" class="Navmenu-link Navmenu-link--action js-Navmenu-link--api">API call</a>
+            </li>
+
+            <li class="Navmenu-item Navmenu-item--action u-hideOnTablet">
+              <i class="Navmenu-actionIcon CDB-IconFont CDB-IconFont-floppy"></i>
+              <a href="#" class="Navmenu-link Navmenu-link--action js-Navmenu-link--download">Download</a>
+            </li>
+
+              <li class="Navmenu-item u-hideOnTablet">
+                <a class="Button Button--main Navmenu-editLink Navmenu-editLink--edit Navmenu-editLink--oneclick is-active js-oneclick" href="https://oneclick.carto.com/?file=http%3A%2F%2Fjsanz.carto.com%3A80%2Fapi%2Fv2%2Fsql%3Fq%3DSELECT%2520%2A%2520FROM%2520jsanz.distritos%26format%3Dshp&provider=jsanz&logo=https://s3.amazonaws.com/com.cartodb.users-assets.production/production/jsanz/assets/20150512093716188264.jpeg">Create map</a>
+                <a href="https://team.carto.com/u/jsanz/tables/distritos" class="Button Button--main Navmenu-editLink Navmenu-editLink--edit Navmenu-editLink--oneclick js-edit">Edit in CARTO</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CDB-Text PublicMap-secondary PublicMap-secondary--bottom">
+    <div class="u-inner">
+      <div class="PublicMap-block">
+        <div class="PublicMap-leftBlock PublicMap-leftBlock--large">
+          <div class="js-user-meta">
+            <h1 class="PublicMap-title js-PublicMap-title Title Title--m">distritos</h1>
+              <div class="PublicMap-description"><p>Districts of Madrid provided by the city Open Data portal at http://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=46b55cde99be2410VgnVCM1000000b205a0aRCRD&amp;vgnex</p>
+</div>
+
+            <div class="PublicMap-meta">
+              <ul class="PublicMap-metaList">
+                <li class="PublicMap-metaItem"><i class="PublicMap-metaIcon CDB-IconFont CDB-IconFont-calendar"></i>  <span title="almost 4 years ago">almost 4 years ago</span></li>
+              </ul>
+
+              <ul class="PublicMap-metaList PublicMap-metaList--mobile js-PublicMap-metaList--mobile">
+                  <li class="PublicMap-metaItem">
+                    <i class="PublicMap-metaIcon CDB-IconFont CDB-IconFont-rows RowsIndicator-icon"></i>
+                      21
+                     <span title="rows">rows</span>
+                  </li>
+
+
+              </ul>
+            </div>
+
+            <a class="Navmenu-editLink Navmenu-editLink--more js-Navmenu-editLink--more" href="#/more">More info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="u-inner">
+        <div class="PublicMap-block with-padding">
+          <h3 class="PublicMap-secondaryTitle">Maps using this dataset</h3>
+        </div>
+      </div>
+
+      <ul class="MapsList PublicMap-mapsList">
+          <li class="MapsList-item">
+            <div class="MapCard" data-vis-id="d1352d36-242b-11e5-8a76-0e4fddd5de28" data-vis-owner-name="jsanz">
+              <a href="https://team.carto.com/u/jsanz/viz/d1352d36-242b-11e5-8a76-0e4fddd5de28/public_map" class="MapCard-header js-header">
+                <div class="MapCard-loader"></div>
+              </a>
+              <div class="MapCard-content MapCard-content--compact">
+                <div class="MapCard-contentBody">
+                  <div class="MapCard-contentBodyRow MapCard-contentBodyRow--flex">
+                    <h3 class="MapCard-title DefaultTitle CDB-Text is-semibold CDB-Size-large">
+                      <a href="https://team.carto.com/u/jsanz/viz/d1352d36-242b-11e5-8a76-0e4fddd5de28/public_map" class="DefaultTitle-link u-ellipsLongText" title="Madrid 1875">Madrid 1875</a>
+                    </h3>
+                  </div>
+                  <div class="MapCard-contentFooterTimeDiff DefaultTimeDiff CDB-Text CDB-Size-medium u-altTextColor">
+                    <i class="CDB-IconFont CDB-IconFont-clock DefaultTimeDiff-icon"></i>
+                    over 5 years ago
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+            <li class="MapsList-item MapsList-item--fake">
+              <div class="MapCard">
+                <div class="MapCard-header MapCard-header--fake"></div>
+                <div class="MapCard-content MapCard-content--compact"></div>
+              </div>
+            </li>
+            <li class="MapsList-item MapsList-item--fake">
+              <div class="MapCard">
+                <div class="MapCard-header MapCard-header--fake"></div>
+                <div class="MapCard-content MapCard-content--compact"></div>
+              </div>
+            </li>
+      </ul>
+
+      <div class="u-inner">
+        <div class="PublicMap-block PublicMap-info">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_shortname  = 'jsanz-in-cartodb';
+            var disqus_identifier = '3328dac8-23e7-11e5-8647-0e5e07bb5d8a';
+
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+        </div>
+      </div>
+    </div>
+
+    
+<footer id="Footer" class="CDB-Text CDB-FontSize-medium Footer  Footer--public u-pr">
+  <div class="Footer-inner Footer-inner--public">
+    <div class="u-inner">
+      <p class="PublicTitle PublicTitle--feature">Subscribe</p>
+      <h3 class="Title Title--sectionMedium u-vspace--20">Keep up with CARTO announcements</h3>
+
+      <div class="Grid u-vspace-l">
+        <ul class="Grid-inner">
+          <li class="Grid-cell Grid-cell--col5 Grid-cell--col6--tablet Grid-cell--col12--mobile">
+            <div class="Newsletter js-Hubspot--newsletter">
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({ 
+    css: ".hs-form{margin-right:-20px}.hs-form fieldset{display:block;width:100%;max-width:none !important}.hs-form label{display:none}.hs-form .input{margin-right:20px !important;margin-bottom:20px}.hs-form .hs-input{width:100% !important;outline:none}.hs-form select{height:35px;border:1px solid #ccc;font-size:13px;color:#666}.hs-form input.hs-input,.hs-form textarea{border:1px solid #ddd;padding:8px 16px;transition:all .3s;font:300 14px/22px 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#999;background:#fff;border-radius:4px;box-shadow:0 2px 0 rgba(0,0,0,0.05) inset}@media (max-width: 380px){.hs-form input.hs-input,.hs-form textarea{padding:12px 16px}}.hs-form input.hs-input:focus,.hs-form textarea:focus{border-color:#ccc}.hs-form textarea{height:80px}@media (max-width: 380px){.hs-form textarea{display:none}}",
+    portalId: "474999",
+    formId: "2ed2a125-0e48-4d52-a03c-a1cb90f0433b",
+    submitButtonClass: 'hs-newsletter',
+    target: '.js-Hubspot--newsletter',
+    formInstanceId: '2'
+  });
+</script>
+            </div>
+          </li>
+
+          <li class="Grid-cell Grid-cell--col7 Grid-cell--col6--tablet Grid-cell--col12--mobile">
+            <p class="Footer-social">Or follow us on <a href="https://twitter.com/cartodb" target="_blank" rel="noopener noreferrer" class="Footer-link u-lspace--20">
+              <i class="FooterIcon FooterIcon--twitter FooterIcon--s14 u-iblock u-malign">
+                <svg width="18px" height="14px" viewBox="0 0 500 408" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-2000.000000, -500.000000)">
+                      <path d="M2157.24789,907.407407 C2099.31782,907.407407 2045.39669,890.381519 2000,861.200045 C2008.02517,862.149901 2016.19116,862.635831 2024.47054,862.635831 C2072.53009,862.635831 2116.76177,846.193059 2151.86912,818.608736 C2106.98087,817.778071 2069.09726,788.042821 2056.04448,747.180689 C2062.30659,748.381761 2068.73331,749.025389 2075.34292,749.025389 C2084.69951,749.025389 2093.76166,747.769306 2102.37024,745.418505 C2055.44095,735.971292 2020.08303,694.401353 2020.08303,644.568769 C2020.08303,644.136016 2020.08303,643.705097 2020.09035,643.276012 C2033.92224,650.979378 2049.73847,655.605799 2066.5551,656.139405 C2039.03032,637.696068 2020.91883,606.215137 2020.91883,570.533203 C2020.91883,551.684619 2025.97754,534.016936 2034.80742,518.82658 C2085.40181,581.051296 2160.98797,621.997778 2246.24346,626.286798 C2244.49504,618.759466 2243.58609,610.909404 2243.58609,602.848467 C2243.58609,546.049664 2289.51681,500 2346.17031,500 C2375.67395,500 2402.33366,512.491152 2421.04686,532.480297 C2444.41274,527.866712 2466.36673,519.307009 2486.1864,507.52183 C2478.52701,531.537776 2462.2627,551.693787 2441.08234,564.42332 C2461.83291,561.936825 2481.6032,556.408225 2500,548.228097 C2486.24675,568.853535 2468.85402,586.96864 2448.81305,601.469526 C2449.01057,605.87957 2449.10933,610.315286 2449.10933,614.77484 C2449.10933,750.68672 2345.93072,907.407407 2157.24789,907.407407" id="icon_14_twitter" sketch:type="MSShapeGroup"></path>
+                    </g>
+                  </g>
+                </svg>
+              </i>
+            </a> <a href="https://www.facebook.com/CartoDB" target="_blank" rel="noopener noreferrer" class="Footer-link u-lspace--20">
+              <i class="FooterIcon FooterIcon--twitter FooterIcon--s14 u-iblock u-malign">
+                <svg width="14px" height="14px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-2500.000000, -500.000000)">
+                      <path d="M2972.40477,500 L2527.59523,500 C2512.35135,500 2500,512.351345 2500,527.595225 L2500,972.404775 C2500,987.644908 2512.35135,1000 2527.59523,1000 L2767.06483,1000 L2767.06483,806.374441 L2701.906,806.374441 L2701.906,730.913771 L2767.06483,730.913771 L2767.06483,675.264337 C2767.06483,610.682518 2806.50933,575.516872 2864.12021,575.516872 C2891.71544,575.516872 2915.43459,577.571995 2922.34558,578.489962 L2922.34558,645.981176 L2882.38964,645.99991 C2851.05697,645.99991 2844.9909,660.887843 2844.9909,682.735468 L2844.9909,730.913771 L2919.71532,730.913771 L2909.98486,806.374441 L2844.9909,806.374441 L2844.9909,1000 L2972.40477,1000 C2987.64491,1000 3000,987.644908 3000,972.404775 L3000,527.595225 C3000,512.351345 2987.64491,500 2972.40477,500" id="icon_15_facebook" sketch:type="MSShapeGroup"></path>
+                    </g>
+                  </g>
+                </svg>
+              </i>
+            </a> <a href="https://www.linkedin.com/company/carto/" target="_blank" rel="noopener noreferrer" class="Footer-link u-lspace--20">
+              <i class="FooterIcon FooterIcon--twitter FooterIcon--s14 u-iblock u-malign">
+                <svg width="14px" height="14px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                    <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-3000.000000, -500.000000)">
+                      <path d="M3000,535.816886 C3000,516.041104 3016.54224,500 3036.94908,500 L3463.05091,500 C3483.45709,500 3500,516.041104 3500,535.816886 L3500,964.183113 C3500,983.965579 3483.45709,1000 3463.05091,1000 L3036.94908,1000 C3016.54224,1000 3000,983.965579 3000,964.183113 L3000,535.816886 L3000,535.816886 L3000,535.816886 Z M3141.32261,907.438908 L3141.32261,681.660906 L3065.80209,681.660906 L3065.80209,907.438908 L3141.32261,907.438908 L3141.32261,907.438908 Z M3103.56202,650.834731 C3129.89755,650.834731 3146.28918,633.497514 3146.28918,611.831003 C3145.79838,589.676778 3129.89755,572.820595 3104.06156,572.820595 C3078.22827,572.820595 3061.33775,589.676778 3061.33775,611.831003 C3061.33775,633.497514 3077.72603,650.834731 3103.06986,650.834731 L3103.56067,650.834731 L3103.56202,650.834731 L3103.56202,650.834731 Z M3183.11053,907.438908 L3258.63038,907.438908 L3258.63038,781.354914 C3258.63038,774.607096 3259.12119,767.865958 3261.11534,763.04227 C3266.57474,749.559994 3279.00092,735.596687 3299.86361,735.596687 C3327.19085,735.596687 3338.12241,756.301132 3338.12241,786.652954 L3338.12241,907.438908 L3413.63621,907.438908 L3413.63621,777.981005 C3413.63621,708.632137 3376.37852,676.362864 3326.69197,676.362864 C3285.95089,676.362864 3268.06532,698.991442 3258.12814,714.404528 L3258.6324,714.404528 L3258.6324,681.660906 L3183.11254,681.660906 C3184.10357,702.846383 3183.11254,907.438908 3183.11254,907.438908 L3183.11053,907.438908 L3183.11053,907.438908 Z" id="icon_16_linkedin" sketch:type="MSShapeGroup"></path>
+                    </g>
+                  </g>
+                </svg>
+              </i>
+            </a></p>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="Sep u-vspace-l u-mobile-hide"></hr>
+
+      <div class="u-block--mobile">
+        <dl class="Footer-column Footer-column--mobile">
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a class="Footer-link" href="https://carto.com/builder/">Builder</a></dd>
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a class="Footer-link" href="https://carto.com/engine/">Engine</a></dd>
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a class="Footer-link" href="https://carto.com/mobile/">Mobile</a></dd>
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a class="Footer-link" href="https://carto.com/location-data-services/">Location Data Services</a></dd>
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a class="Footer-link" href="https://carto.com/platform/location-data-streams/">Location Data Streams</a></dd>
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a class="Footer-link" href="https://github.com/CartoDB/cartodb">Source Code</a></dd>
+          <dd class="Footer-item Footer-item--mobile"><i class="FooterIcon FooterIcon--mobile Footer-arrow">
+            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+            <svg width="6px" height="10px" viewBox="0 0 272 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+              <title>icon_03_caretRight</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="icons" transform="translate(-1500.000000, 0.000000)" fill="#ddd">
+                  <path d="M1748.23301,281.69014 L1772,249.999999 L1748.23301,218.309858 L1616.19418,42.2535212 L1584.50485,0 L1500,63.380282 L1531.68932,105.633803 L1639.61495,250.461632 L1531.68932,394.366197 L1500,436.619718 L1584.50485,500 L1616.19418,457.746479 L1748.23301,281.69014 L1748.23301,281.69014 Z" id="icon_03_caretRight"></path>
+                </g>
+              </g>
+            </svg>
+          </i><a href="https://carto.com/pricing/" class="Footer-link">Pricing</a></dd>
+        </dl>
+      </div>
+
+      <div class="Grid Footer-columns Footer-columns--noBorder u-mobile-hide">
+        <ul class="Grid-inner Grid-inner--shortpadding">
+          <li class="Grid-cell Grid-cell--col2 Grid-cell--col4--tablet Grid-cell--col6--mobile Footer-column">
+            <dl>
+              <dt class="Footer-title u-vspace-xs">Product</dt>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/builder/">Builder</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/engine/">Engine</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/mobile/">Mobile</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/location-data-services/">Location Data Services</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/platform/location-data-streams/">Location Data Streams</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://github.com/CartoDB/cartodb">Source Code</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/pricing/" class="Footer-link">Pricing</a></dd>
+            </dl>
+          </li>
+
+          <li class="Grid-cell Grid-cell--col2 Grid-cell--col4--tablet Grid-cell--col6--mobile Footer-column">
+            <dl>
+              <dt class="Footer-title u-vspace-xs">Solutions</dt>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/cities-government/">Cities &amp; Government</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/consumer-packaged-goods/">CPG</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/environmental-and-natural-resources/">Environmental &amp; Natural Resources</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/banking-and-insurance/">Financial Services</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/healthcare-and-pharma/">Healthcare &amp; Pharma</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/logistics/">Logistics</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/marketing-and-advertising/">Marketing &amp; Advertising</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/real-estate/">Real Estate</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/retail/">Retail</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/telecommunications/">Telecommunications</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/transport/">Transport</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/industries/utilities/">Utilities</a></dd>
+            </dl>
+          </li>
+
+          <li class="Grid-cell Grid-cell--col2 Grid-cell--col4--tablet Grid-cell--col6--mobile Footer-column">
+            <dl>
+              <dt class="Footer-title u-vspace-xs">Integrations</dt>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/dropbox/">Dropbox</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/google-drive/">Google Drive</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/box/">Box</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/twitter-maps/">Twitter Maps</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/excel/">Excel Data</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/arcgis/">ArcGIS™</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/satellite-imagery/">Satellite Imagery</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/qlik/">Qlik</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/splunk/">Splunk</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/integrations/alteryx/">Alteryx</a></dd>
+            </dl>
+          </li>
+
+          <li class="Grid-cell Grid-cell--col2 Grid-cell--col4--tablet Grid-cell--col6--mobile Footer-column">
+            <dl>
+              <dt class="Footer-title u-vspace-xs">Platform</dt>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/platform/data-ingestion-management/">Data Ingestion & Management</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/platform/data-enrichment/">Data Enrichment</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/platform/analysis/">Analysis</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/platform/solutions-visualization/">Solutions & Visualization</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/platform/integration/">Integration</a></dd>
+            </dl>
+          </li>
+
+          <li class="Grid-cell Grid-cell--col2 Grid-cell--col4--tablet Grid-cell--col6--mobile Footer-column">
+            <dl>
+              <dt class="Footer-title u-vspace-xs">Learn</dt>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/learn/guides">Guides</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/developers/">Developers</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/resources/">Resources Center</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/webinars/">Webinars</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/blog">Blog</a></dd>
+            </dl>
+          </li>
+
+          <li class="Grid-cell Grid-cell--col2 Grid-cell--col4--tablet Grid-cell--col6--mobile Footer-column">
+            <dl>
+              <dt class="Footer-title u-vspace-xs">About us</dt>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/team/">Team</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/jobs/">Jobs</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/press/">Press</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/partners/">Partners</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/about-carto/">Attributions</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/contributions/">Contributions</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/request-live-demo/">Request a Live Demo</a></dd>
+              <dd class="Footer-item"><a class="Footer-link" href="https://carto.com/legal/">Legal</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+  window._trackJs = {
+    enabled: true,
+    application: 'vzeuvy3koiv3xsukyffu',
+    version: '1.0.0-assets.222'
+      ,callback: { enabled: false },
+      console: { enabled: false, display: false },
+      network: { enabled: true },
+      window: { enabled: false },
+      visitor: { enabled: false }
+  };
+</script>
+<script type="text/javascript" src="//d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js" data-token="cf7a7cd8411140689ea94e92d9fba842"></script>
+
+    
+  <script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/javascripts/common.js"></script>
+<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/javascripts/common_vendor.js"></script>
+<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/1.0.0-assets.222/javascripts/public_table_new.js"></script>
+
+  <script>
+    var table_name          = 'jsanz.distritos';
+    var table_id            = '75ebe48c-181a-4ebc-8248-452c2ac7ad03';
+    var schema              = JSON.parse('[[\"cartodb_id\",\"number\"],[\"the_geom\",\"geometry\",\"geometry\",\"multipolygon\"],[\"coddistrit\",\"string\"],[\"nombre\",\"string\"],[\"shape_area\",\"number\"],[\"shape_len\",\"number\"],[\"created_at\",\"date\"],[\"updated_at\",\"date\"]]');
+    var user_name           = 'jsanz';
+    var owner_username      = 'jsanz';
+    var belong_organization = true;
+    var map                 = JSON.parse('{\"provider\":\"leaflet\",\"bounding_box_sw\":\"[0, 0]\",\"bounding_box_ne\":\"[0, 0]\",\"center\":\"[40.47787172890032, -3.7035064424015536]\",\"zoom\":11,\"view_bounds_sw\":\"[40.33817045213394, -4.143218994140625]\",\"view_bounds_ne\":\"[40.617079816381285, -3.264312744140625]\",\"updated_at\":\"2018-06-20T12:32:22.721Z\",\"id\":\"b0b1d92b-7679-4995-9025-07f0bc1ff5fd\",\"user_id\":\"029cd392-0d6a-471d-83d1-f13ded9648d7\",\"scrollwheel\":false,\"legends\":true,\"options\":{\"dashboard_menu\":true,\"layer_selector\":false,\"legends\":true,\"scrollwheel\":false}}');
+    var config              = JSON.parse('{\"region\":\"US\",\"maps_api_template\":\"https://{user}.carto.com:443\",\"maps_api_v2_template\":\"https://maps-api-v2.us.carto.com/user/{user}\",\"user_name\":\"jsanz\",\"cartodb_com_hosted\":null,\"account_host\":\"carto.com\",\"max_asset_file_size\":1048576,\"api_key\":\"\",\"sql_api_template\":\"https://{user}.carto.com:443\",\"error_track_url\":\"https://viz2.cartodb.com/api/v1/sql\",\"error_track_percent_users\":10,\"cdn_url\":{\"http\":\"gusc.cartocdn.com\",\"https\":\"cartocdn-gusc.global.ssl.fastly.net\"},\"common_data_user\":\"common-data\"}');
+    var vizjson_obj         = JSON.parse('{\"id\":\"3328dac8-23e7-11e5-8647-0e5e07bb5d8a\",\"version\":\"0.1.0\",\"title\":\"distritos\",\"description\":\"\\u003cp\\u003eDistricts of Madrid provided by the city Open Data portal at http://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=46b55cde99be2410VgnVCM1000000b205a0aRCRD\\u0026amp;vgnex\\u003c/p\\u003e\\n\",\"scrollwheel\":false,\"legends\":true,\"url\":null,\"map_provider\":\"leaflet\",\"bounds\":[[40.33817045213394,-4.143218994140625],[40.617079816381285,-3.264312744140625]],\"center\":\"[40.47787172890032, -3.7035064424015536]\",\"zoom\":11,\"updated_at\":\"2018-06-20 12:32:22 UTC\",\"layers\":[{\"options\":{\"urlTemplate\":\"https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png\",\"urlTemplate2x\":\"https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}@2x.png\",\"subdomains\":\"abcd\",\"minZoom\":\"0\",\"maxZoom\":\"18\",\"name\":\"Positron (labels below)\",\"className\":\"positron_rainbow\",\"attribution\":\"\\u0026copy; \\u003ca href=\\\"http://www.openstreetmap.org/copyright\\\" target=\\\"_blank\\\" rel=\\\"noopener\\\"\\u003eOpenStreetMap\\u003c/a\\u003e contributors\"},\"infowindow\":null,\"tooltip\":null,\"id\":\"09323efb-1210-497a-891b-7593834ac5af\",\"order\":0,\"type\":\"tiled\"},{\"type\":\"layergroup\",\"options\":{\"user_name\":\"jsanz\",\"maps_api_template\":\"https://{user}.carto.com:443\",\"sql_api_template\":\"https://{user}.carto.com:443\",\"tiler_protocol\":\"http\",\"tiler_domain\":\"carto.com\",\"tiler_port\":\"80\",\"sql_api_protocol\":\"http\",\"sql_api_domain\":\"carto.com\",\"sql_api_endpoint\":\"/api/v2/sql\",\"sql_api_port\":80,\"filter\":\"mapnik\",\"layer_definition\":{\"stat_tag\":\"3328dac8-23e7-11e5-8647-0e5e07bb5d8a\",\"version\":\"1.0.1\",\"layers\":[{\"id\":\"1c8438cd-bafb-4fb8-82b7-79e7bc5f3895\",\"type\":\"CartoDB\",\"infowindow\":{\"fields\":[],\"template_name\":\"table/views/infowindow_light\",\"template\":\"\\u003cdiv class=\\\"cartodb-popup v2\\\"\\u003e\\n  \\u003ca href=\\\"#close\\\" class=\\\"cartodb-popup-close-button close\\\"\\u003ex\\u003c/a\\u003e\\n  \\u003cdiv class=\\\"cartodb-popup-content-wrapper\\\"\\u003e\\n    \\u003cdiv class=\\\"cartodb-popup-content\\\"\\u003e\\n      {{#content.fields}}\\n        {{#title}}\\u003ch4\\u003e{{title}}\\u003c/h4\\u003e{{/title}}\\n        {{#value}}\\n          \\u003cp {{#type}}class=\\\"{{ type }}\\\"{{/type}}\\u003e{{{ value }}}\\u003c/p\\u003e\\n        {{/value}}\\n        {{^value}}\\n          \\u003cp class=\\\"empty\\\"\\u003enull\\u003c/p\\u003e\\n        {{/value}}\\n      {{/content.fields}}\\n    \\u003c/div\\u003e\\n  \\u003c/div\\u003e\\n  \\u003cdiv class=\\\"cartodb-popup-tip-container\\\"\\u003e\\u003c/div\\u003e\\n\\u003c/div\\u003e\\n\",\"alternative_names\":{},\"width\":226,\"maxHeight\":180},\"tooltip\":{\"fields\":[],\"template_name\":\"tooltip_light\",\"template\":\"\\u003cdiv class=\\\"cartodb-tooltip-content-wrapper\\\"\\u003e\\n  \\u003cdiv class=\\\"cartodb-tooltip-content\\\"\\u003e\\n  {{#fields}}\\n    {{#title}}\\n    \\u003ch4\\u003e{{title}}\\u003c/h4\\u003e\\n    {{/title}}\\n    \\u003cp\\u003e{{{ value }}}\\u003c/p\\u003e\\n  {{/fields}}\\n  \\u003c/div\\u003e\\n\\u003c/div\\u003e\",\"alternative_names\":{},\"maxHeight\":180},\"legend\":{\"type\":\"none\",\"show_title\":false,\"title\":\"\",\"template\":\"\",\"visible\":true},\"order\":1,\"visible\":true,\"options\":{\"layer_name\":\"distritos\",\"cartocss\":\"/** simple visualization */\\n\\n#distritos{\\n  polygon-fill: #FF6600;\\n  polygon-opacity: 0.7;\\n  line-color: #FFF;\\n  line-width: 0.5;\\n  line-opacity: 1;\\n}\",\"cartocss_version\":\"2.1.1\",\"interactivity\":\"cartodb_id\",\"sql\":\"select * from distritos\",\"table_name\":\"\\\"\\\".\"}}]},\"attribution\":\"\"}}],\"overlays\":[{\"type\":\"share\",\"order\":1,\"options\":{\"display\":true,\"x\":20,\"y\":20},\"template\":\"\"},{\"type\":\"search\",\"order\":2,\"options\":{\"display\":true,\"x\":60,\"y\":20},\"template\":\"\"},{\"type\":\"zoom\",\"order\":3,\"options\":{\"display\":true,\"x\":20,\"y\":20},\"template\":\"\\u003ca href=\\\"#zoom_in\\\" class=\\\"zoom_in\\\"\\u003e+\\u003c/a\\u003e \\u003ca href=\\\"#zoom_out\\\" class=\\\"zoom_out\\\"\\u003e-\\u003c/a\\u003e\"},{\"type\":\"loader\",\"order\":4,\"options\":{\"display\":true,\"x\":20,\"y\":150},\"template\":\"\\u003cdiv class=\\\"loader\\\" original-title=\\\"\\\"\\u003e\\u003c/div\\u003e\"},{\"type\":\"logo\",\"order\":5,\"options\":{\"display\":true,\"x\":10,\"y\":40},\"template\":\"\"}],\"prev\":null,\"next\":null,\"transition_options\":{}}');
+    var auth_token          = JSON.parse('null');
+    var use_https           = false;
+    var api_key             = JSON.parse('null');
+    var base_url            = 'https://team.carto.com/u/jsanz';
+    var login_url           = "https://jsanz.carto.com/login";
+  </script>
+
+
+  </body>
+</html>
